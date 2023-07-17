@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'home'])->name('welcome');
-Route::get('/contattaci', [PublicController::class, 'conctact'])->name('contact.mail');
+Route::get('/contattaci', [PublicController::class, 'contact'])->name('contact.mail');
 Route::post('/contattaci/submit', [PublicController::class, 'submit'])->name('contact.submit');
 
 

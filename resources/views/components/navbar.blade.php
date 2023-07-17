@@ -12,9 +12,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('contact.mail')}}">contattaci</a>
           </li>
-          @guest
-              
-          
+          @guest          
           <li class="nav-item">
             <a class="nav-link" href="{{route('register')}}">Registrati</a>
           </li>

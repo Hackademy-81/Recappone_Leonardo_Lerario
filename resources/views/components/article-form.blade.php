@@ -1,9 +1,5 @@
 <form method="POST" enctype="multipart/form-data" action="{{route('article.store')}}">
     @csrf
-    {{-- <div class="mb-3">
-      <label class="form-label">Nome autore</label>
-      <input type="text" class="form-control" name="author" >
-    </div>    --}}
     <div class="mb-3">
         <label class="form-label">Titolo</label>
         <input type="text" class="form-control @error('title') is-invalid @enderror"  name="title" value="{{old('title')}}" >
